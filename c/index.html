@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="bg.jpg">
+    <div class="heading">
+        <div class="Wellcome">
+            <h1>Wellcome To </h1>
+        </div>
+        <div class="ludo">
+            <div class="l"><h1>D</h1></div>
+            <div class="u"><h1>I</h1></div>
+            <div class="d"><h1>C</h1></div>
+            <div class="o"><h1>E</h1></div>
+        </div>
+        <div class="game">
+            <h1>Game</h1>
+        </div>
+    </div>
+    <div class="main_box">
+        
+        <div class="game-sction">
+            <div class="player1">
+                <h1 id="player1-h1">Player 1</h1>
+                <div class="img1">
+                    <img src="dice1.jpg" alt="" height="80px" width="80px" id="player1Img">
+                </div>
+                <button class="btn" id="Roll-btn1"  disabled  onclick="StartingGame()">Roll Dice</button>
+
+            </div>
+            <div class="player2">
+                <h1 id="player2-h1">Player 2</h1>
+                <div class="img2">
+                    <img src="dice6.jpg" alt="" height="80px" width="80px" id="player2Img">
+                </div>
+                <button class="btn" id="Roll-btn2" disabled onclick="e()">Roll Dice</button>
+
+            </div>
+        </div>
+        <div class="inputfild">
+            <input type="text" id="name1" placeholder="player 1 name">
+            <input type="text" id="name2" placeholder="player 2 name">
+
+        </div>
+        <h1 id="d"></h1>
+        <div class="score-sction">
+            <table  class="table1">
+                <caption >
+                    <br>
+                    <h2 id="s">Score</h2>
+                </caption>
+                <tr>
+                    <th><span id="player1-samp">player1</span></th>
+                    <th><span id="player2-samp">player2</span></th>
+                </tr>
+                
+                <tr>
+                    <th><span id="p1-score">0</span></th>
+                    <th><span id="p2-score">0</span></th>
+                        
+                </tr>
+                
+            </table>
+            <table class="table2" >
+                <tr>
+                    <th><button class="btn2" id="Start" disabled onclick="gamestart()">Start</button></th>
+                    <th><button class="btn2" id="Restart" disabled onclick="reset()">Restart</button></th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
